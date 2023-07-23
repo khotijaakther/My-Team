@@ -1,0 +1,68 @@
+/* common shared styles */
+  body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+     font-family: 'PT Serif', serif;
+     font-family: 'Work Sans', sans-serif;
+  }
+
+/* header-section styles */
+.header-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+}
+.header-title{
+   font-size: 30px;
+   font-weight: 700;
+   font-family: 'Open Sans', sans-serif;
+   font-family: 'PT Serif', serif;
+   font-family: 'Work Sans', sans-serif;
+}
+.header-content{
+   font-size: 18px;
+  font-weight: 600;
+
+}
+.header-content p{
+    color: grey;
+}
+/* main section styles */
+.banner{
+    margin-top:60px;
+}
+.row-img{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    padding: 30px;
+}
+.banner-img{
+     width:32%;
+}
+.banner-img> img{
+   width: 100%;
+}
+#saba{
+  margin-top: 80px;
+}
+.banner-img h3{
+  font-size: 18px;
+  font-weight: 600;
+}
+/* small device responsive */
+@media screen and (max-width:576px) {
+     .header-container{
+       flex-direction: column;
+       padding: 10px;
+     }
+     .row-img{
+         flex-grow: 1;
+         padding: 10px;
+         gap: 10px;
+     }
+     .banner-img{
+       width: 40%;
+     }
+}
